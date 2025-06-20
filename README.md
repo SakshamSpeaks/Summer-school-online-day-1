@@ -1,1 +1,0 @@
-# Summer-school-online-day-1
