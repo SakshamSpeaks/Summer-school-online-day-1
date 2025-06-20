@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is contact page</h1>
+    <!-- for name  -->
+    <label for="name">Name:</label>
+    <br>
+    <input type="text" id="name" name="name" required>
+    <br>
+    <br>
+
+    <!-- for Email -->
+    <label for="email">Email:</label>
+    <br>
+    <input type="email" id="email" name="email" required>
+    <br>
+    <br>
+
+    <!-- for Phone Number -->
+    <label for="phone">Phone Number:</label>
+    <br>
+    <input type="number" id="phone" name="phone" required>
+    <br>
+    <br>
+
+    <!-- for Message -->
+    <label for="message">Message:</label>
+    <br>
+    <textarea id="message" name="message" rows="5" cols="30" required>
+
+    </textarea>
+    <br>
+    <br>
+
+    <!-- Preferred Contact Methods -->
+    <label>Preferred Contact Method:</label><br>
+    <input type="checkbox" id="contact_email" name="contact_method[]" value="Email">
+    <label for="contact_email">Email</label>
+    <br>
+
+    <input type="checkbox" id="contact_phone" name="contact_method[]" value="Phone">
+    <label for="contact_phone">Phone</label>
+    <br>
+
+    <input type="checkbox" id="contact_text" name="contact_method[]" value="Text">
+    <label for="contact_text">Text</label>
+    
+    <br>
+    <br>
+
+    <!-- Inquiry Type -->
+    <label>Inquiry Type:</label><br>
+    <input type="radio" id="general" name="inquiry_type" value="General" required>
+    <label for="general">General</label>
+    <br>
+
+    <input type="radio" id="business" name="inquiry_type" value="Business">
+    <label for="business">Business</label>
+    <br>
+
+    <input type="radio" id="support" name="inquiry_type" value="Support">
+    <label for="support">Support</label>
+    <br>
+    <br>
+
+    <!-- Submit Button -->
+    <button type="submit">Submit</button>
+
+<!-- date -->
+    <h3>When will you connect</h3>
+       <label for="date">Date:</label><br>
+          <input type="date" id="date" name="date" required>
+          <br>
+          <br>
+
+          <h3>Which field your seats are available </h3>
+          <label for="service">Select a Service:</label><br>
+          <select id="service" name="service" required>
+            <option value="">--Please choose an option--</option>
+            <option value="web">Web Development</option>
+            <option value="iot">IoT Project</option>
+            <option value="consult">Consultation</option>
+          </select><br><br>
+
+          <!-- range slider -->
+             <label for="budget">Project Budget (in ₹):</label><br>
+          <input type="range" id="budget" name="budget" min="1000" max="100000" step="1000" oninput="output.value = budget.value" required>
+          ₹<output name="output" for="budget">1000</output><br><br>
+
+  </form>
+</body>
+</html>
